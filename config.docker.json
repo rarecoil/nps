@@ -1,0 +1,20 @@
+{
+    "scanner_processes": 1,
+    "reporter_processes": 1,
+
+    "redis_url": "redis://redis:6379",
+    "postgres_host": "postgres",
+    "postgres_port": 5432,
+    "postgres_user": "postgres",
+    "postgres_password": "root",
+    "postgres_database": "nps",
+
+    "work_queue": "nps_tarball",
+    "result_queue": "nps_result",
+
+    "staging_path": "/tmp/nps-stage",
+
+    "enable_ui": true,
+    "ui_host": "127.0.0.1",
+    "ui_port": 3000
+}

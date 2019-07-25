@@ -1,0 +1,55 @@
+{
+  "name": "nps",
+  "version": "0.1.0",
+  "description": "A mass vulnerability scanner for NPM modules.",
+  "main": "dist/nps.js",
+  "scripts": {
+    "build": "npx tsc",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rarecoil/nps.git"
+  },
+  "keywords": [
+    "boilerplate"
+  ],
+  "author": "rarecoil",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/rarecoil/nps/issues"
+  },
+  "homepage": "https://github.com/rarecoil/nps#readme",
+  "devDependencies": {
+    "@types/body-parser": "^1.17.0",
+    "@types/express": "^4.17.0",
+    "@types/helmet": "0.0.43",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.12",
+    "@types/recursive-readdir": "^2.2.0",
+    "@types/redlock": "^3.0.4",
+    "@types/rimraf": "^2.0.2",
+    "@types/redis": "^2.8.13",
+    "@types/tar": "^4.0.2",
+    "heapdump": "^0.3.14",
+    "jest": "^24.1.0",
+    "ts-jest": "^23.10.5",
+    "typescript": "^3.3.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "check-disk-space": "^2.1.0",
+    "express": "^4.17.1",
+    "gzip-isize": "^1.0.2",
+    "helmet": "^3.18.0",
+    "is-text-path": "^2.0.0",
+    "pg": "^7.11.0",
+    "recursive-readdir": "^2.2.2",
+    "redis": "^2.8.0",
+    "redlock": "^4.0.0",
+    "reflect-metadata": "^0.1.13",
+    "rimraf": "^2.6.3",
+    "tar": "^4.4.10",
+    "typeorm": "^0.2.18"
+  }
+}

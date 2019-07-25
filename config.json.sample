@@ -1,0 +1,22 @@
+{
+    "scanner_processes": 3,
+    "reporter_processes": 1,
+
+    "enable_ui": true,
+    "ui_host": "127.0.0.1",
+    "ui_port": 3000,
+
+    "redis_url": "redis://localhost:6379",
+    "work_queue": "nps_tarball",
+    "result_queue": "nps_result",
+    "queue_max_retries": 5,
+    "queue_ttl_min": 5,
+    
+    "postgres_host": "localhost",
+    "postgres_port": 5432,
+    "postgres_user": "postgres",
+    "postgres_password": "postgres",
+    "postgres_database": "nps",
+    
+    "staging_path": "/tmp"
+}

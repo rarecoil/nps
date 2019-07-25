@@ -1,0 +1,40 @@
+{
+    "updated": 1562746950800,
+    "for_plugin": "Grep",
+    "rules": [
+        {
+            "id": "use_child_process",
+            "regex": "(import|require).*child_process",
+            "fancyName": "Use of child_process",
+            "excludeFilepaths":["\\/\\w*test\\w*\\/"],
+            "restrictExtensions": ["ts", "js"]
+        },
+        {
+            "id": "shell_true_spawn",
+            "regex": "(spawn|spawnSync)\\(.*\\{.*shell\\s*\\:\\s*true.*\\}\\)",
+            "fancyName": "Use of shell: true in spawn",
+            "excludeFilepaths":["\\/\\w*test\\w*\\/"],
+            "restrictExtensions": ["ts", "js"]
+        },
+        {
+            "id": "exec_use",
+            "regex": "(child_process|cp)\\.(exec|execSync)\\[\\s]*\\(.*\\)",
+            "fancyName": "Use of method exec/execSync",
+            "excludeFilepaths":["\\/\\w*test\\w*\\/"],
+            "restrictExtensions": ["ts", "js"]
+        },
+        {
+            "id":"eval",
+            "regex":"\\s+eval\\(.*\\)",
+            "fancyName": "Use of eval",
+            "excludeFilepaths":["\\/.*test.*\\/"],
+            "restrictExtensions": ["ts", "js"]
+        },
+        {
+            "id": "private_key",
+            "regex": "BEGIN.*PRIVATE KEY",
+            "fancyName": "Found private key",
+            "excludeFilepaths":["\\/\\w*test\\w*\\/"]
+        }
+    ]
+}
